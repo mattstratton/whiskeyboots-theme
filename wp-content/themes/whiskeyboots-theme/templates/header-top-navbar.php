@@ -15,6 +15,17 @@
             wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav'));
           endif;
         ?>
+        <!--search form here -->
+	    <form role="search" method="get" id="searchform" class="form-search" action="http://www.whiskeyandboots.dev/">
+		    <label class="hide" for="s">Search for:</label>
+		            <div class="input-prepend">
+			<span class="add-on">            	
+		    <i class="icon-search"></i>
+			</span>
+		    <input type="text" value="" name="s" id="s" class="search-query" placeholder="Search Whiskey and Boots">
+		            </div>
+		    <!--<input type="submit" id="searchsubmit" value="Search" class="btn">-->
+		</form>
       </nav>
     </div>
   </div>

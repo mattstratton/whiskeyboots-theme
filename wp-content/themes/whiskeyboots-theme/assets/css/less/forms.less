@@ -425,7 +425,6 @@ select:focus:invalid {
   margin-bottom: 5px;
   font-size: 0; // white space collapse hack
   white-space: nowrap; // Prevent span and input from separating
-
   // Reset the white space collapse hack
   input,
   select,
@@ -481,7 +480,7 @@ select:focus:invalid {
   .add-on:first-child,
   .btn:first-child {
     // FYI, `.btn:first-child` accounts for a button group that's prepended
-    .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
+    .border-radius(14px 0 0 14px);
   }
 }
 
@@ -489,7 +488,6 @@ select:focus:invalid {
   input,
   select,
   .uneditable-input {
-    .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
     + .btn-group .btn:last-child {
       .border-radius(0 @inputBorderRadius @inputBorderRadius 0);
     }
@@ -562,6 +560,14 @@ input.search-query {
 }
 .form-search .input-prepend .btn {
   .border-radius(14px 0 0 14px);
+}
+
+.form-search {
+	padding-top:5px;
+	margin-bottom: 0px;
+	margin-right:10px;
+	float:right;
+
 }
 
 
