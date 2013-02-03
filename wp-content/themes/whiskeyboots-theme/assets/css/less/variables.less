@@ -12,22 +12,23 @@
 @black:                 #000;
 @grayDarker:            #222;
 @grayDark:              #333;
-@gray:                  #555;
-@grayLight:             #999;
+@gray:                 	#CCCCCC;
+@grayLight:             #999999;
 @grayLighter:           #eee;
-@white:                 #fff;
+@white:                 #FFFFFF;
 
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
-@green:                 #46a546;
+@blue:                  #336699;
+@blueDark:              #003366;
+@green:                 #266A2E;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
 @orange:                #f89406;
 @pink:                  #c3325f;
 @purple:                #7a43b6;
+@pine:					#CCCC99;
 
 
 // Scaffolding
@@ -38,13 +39,13 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @blue;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        'Oswald', sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
@@ -53,9 +54,9 @@
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsFontFamily:    "Josefin Slab", serif; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    700;    // instead of browser default, bold
+@headingsColor:         @blue; // empty to use BS default, @textColor
 
 
 // Component sizing
@@ -181,14 +182,14 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
+@navbarBackgroundHighlight:       @pine;
 @navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
-@navbarText:                      #777;
-@navbarLinkColor:                 #777;
+@navbarText:                      @blue;
+@navbarLinkColor:                 @blue;
 @navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
+@navbarLinkColorActive:           @white;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 

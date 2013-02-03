@@ -38,7 +38,9 @@ body.admin-bar .navbar-fixed-top { top: 28px; }
    Sidebar
    ========================================================================== */
 
-#sidebar { }
+#sidebar {
+	
+ }
 
 
 
@@ -83,4 +85,63 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
   body.top-navbar {
     padding-top: 0;
   }
+}
+
+
+/* ==========================================================================
+   Additional Stuff
+   ========================================================================== */
+   
+.widget {
+	background-color: #CCCC99;
+	border-color:#000;
+	border-width:2px;
+	/*border:solid;*/
+	-moz-border-radius:15px;
+	border-radius:15px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:0;
+	padding-bottom:10px;
+	margin:20px 10px 30px;
+	-moz-box-shadow:4px 4px 4px #000;
+	-webkit-box-shadow:4px 4px 4px #000;
+	box-shadow:0 0 10px #000;
+/* For IE 8 */
+	-ms-filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#000000');
+/* For IE 5.5 - 7 */
+	filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#000000');
+	
+}
+
+.widget_search{
+	background-color: #CCCC99 !important;
+	-moz-box-shadow:0px 0px 0px #000 !important;
+	-webkit-box-shadow:0px 0px 0px #000 !important;
+	box-shadow:0 0 0px #000 !important;
+}
+
+.footer-col {
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right:	auto;
+	
+	
+}
+
+.footer-div {
+	background-color: #CCCC99;
+	overflow: visible;
+	border-radius: 0px !important;
+	-moz-border-radius: 0px !important;	
+}
+
+.footer-c{
+	float:right;
+}
+
+/* for meta */
+.time-meta {
+	font-style: italic;
+	
 }
