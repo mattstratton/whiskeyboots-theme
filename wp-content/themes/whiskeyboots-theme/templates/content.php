@@ -9,7 +9,16 @@
 <?php while (have_posts()) : the_post(); ?>
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header>
+    	<?php if(is_page()) { ?>
+					<div class="banner">
+						<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'featured_image' ); } ?>
+						<div class="bannertext">
+							<?php the_title();?>
+						</div>
+					</div>
+			<?php } else { ?>
       <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      <?php } ?>
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
     <div class="entry-summary">
