@@ -142,3 +142,29 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	font-style: italic;
 	
 }
+
+/* for pages featured images */
+.banner
+{
+	position:relative;
+	float:left;
+/* optional */
+	-moz-border-radius:15px;
+	border-radius:15px;
+	margin-bottom: 30px;
+}
+
+.banner .bannertext
+{
+	position:absolute;
+	bottom:0;
+/* in conjunction with left property, decides the text position */
+	left:0;
+	height:auto;
+	background-color:#CCCC99;
+	font-family:"Josefin Slab", serif;
+	font-size:36pt;
+	line-height: 60px;
+	padding-left:20px;
+	padding-right:20px;
+}
